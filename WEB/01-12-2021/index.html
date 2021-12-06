@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>HTML pamati</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<h1>HTML pamati</h1>
+
+<!--
+ Tagi (1.dalījums):
+ - semantiskie
+        h1 - h6, strong, em, address
+        article, section, main, header, footer
+
+ - pārējie
+        div, span, p, b, i..
+
+ Tagi (2.dalījums):
+ - block (width = 100% of parent)
+        h1-h6, p, div
+
+ - inline (width = width of content):
+        strong, span, b, i, em, img
+
+ -->
+
+<p>Rindkopa</p>
+<strong>SIA Tet</strong>
+<span>Stabu 45</span>
+<address>Rīga</address>
+<img src="images/Snowman.jpg"
+     width="500"
+     height="300"
+     alt="Snowman"
+     title="Snowman title"/>
+
+
+<!--
+Attributes:
+    syntax:
+        attrName="attrValue"
+        attrName='attrValue'
+    groups:
+        global:
+            id - JavaScript, CSS
+            style - CSS inline
+            class - CSS class
+            title - type
+            lang - language
+        tag specific
+            src, width, alt, href, ...
+-->
+
+<p>Drīz būs
+
+
+    Ziemassvētki!</p>
+<pre>Drīz      būs
+
+
+
+
+Ziemassvētki!2</pre>
+
+<a href="https://www.delfi.lv/">Delfi</a>
+<a href="https://www.delfi.lv/" target="_blank"><img src="images/Snowman.jpg"
+                                                     width="50"
+                                                     alt="Snowman"
+                                                     title="Snowman title"/></a>
+
+<!--
+Lists:
+    bulletined = ul (unordered list) + li (list item)
+    ordered = ul (ordered list) + li (list item)
+    definitions(terms) = dl (definition list) + dt (definition term) + dd (definition description)
+-->
+
+<ul>
+    <li>Kafija</li>
+    <li>Tēja</li>
+</ul>
+<ol>
+    <li>Kafija</li>
+    <li>Tēja</li>
+</ol>
+
+<ul>
+    <li>Kafija
+        <ul>
+            <li>Kapučino</li>
+            <li>Latte</li>
+        </ul>
+    </li>
+    <li>Tēja</li>
+</ul>
+
+</body>
+</html>
+
+
+
