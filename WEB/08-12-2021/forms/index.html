@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>HTML formas</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>HTML formas</h1>
+		<!-- 
+			
+			1. Url ?, login.php - attr 'action'
+			form -> action="login.php"
+			
+			2. Parameters
+			input ->	name="username"
+			name="search"
+			
+			uz servera:	username = andris
+			search = covid
+			
+			3. form -> method="get"		(post)
+			
+			GET	server -> client bookmarks, history
+			
+			POST client -> server upload, secure data
+			
+			
+			MIME 
+			
+		-->
+		
+		
+		<form action="index.html" method="get">
+			<label for="usernameInput">Lietotāja vārds: </label>
+			<input id="usernameInput"
+			type="text"
+			name="username"
+			accesskey="u" 
+			tabindex="0"
+			value="Enter your username" /> <br />
+			<label for="passwordInput">Parole: </label><input id="passwordInput" type="password" name="parole"/ accesskey="b" tabindex="2"> <br />
+			
+			<input type="radio" name="Color" value="3" />Sarkana<br />
+			<input type="radio" name="Color" value="5" />Zila<br />
+			<input type="radio" name="Color" value="7" checked="checked" />Rozā<br />
+			<input type="radio" name="Color" value="9" />Melna<br />
+			
+			
+			
+			<select name="cars">
+				<option value="-1">Select a car</option>
+				<option value="1">Audi A4</option>
+				<option value="2" selected>BMW 325i</option>
+				<option value="3">VW Multivan</option>
+				<option value="4">Lada 21345</option>
+			</select>
+			<br />
+			
+			<select name="cars2" size="15" multiple>
+				<option value="-1">Select a car</option>
+				<optgroup label="Auto">
+					<option value="1">Audi A4</option>
+					<option value="2" selected>BMW 325i</option>
+					<option value="3">VW Multivan</option>
+					<option value="4">Lada 21345</option>
+				</optgroup>
+				
+				<optgroup label="Dažādi">
+					<option value="5">Elektriskais skrejritenis</option>
+					<option value="6" selected>Skūteris 100</option>
+				</optgroup>
+				
+				<optgroup label="Moto">
+					<option value="7">Superbike 2000</option>
+					<option value="8" selected>Honda 3000</option>
+					<option value="9" selected>Harley Davidson</option>
+				</optgroup>
+				
+				<optgroup>
+				</optgroup>
+				
+			</select>
+			<br />
+			
+			<textarea name="message"></textarea>
+			
+			<br />
+			<input type="color" name="colorPicker"/>
+			
+			<br />
+			
+			<label>Expired date:</label><input type="date" name="expireDate"/>
+			
+			<br />
+			
+			<input type="submit" value="Go" tabindex="1" /> <br />
+			
+		</form>
+		
+		
+	</body>
+</html>							
